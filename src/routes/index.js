@@ -1,0 +1,6 @@
+export { default as authRoute } from './authRoute.js'
+export { default as userRoute } from './userRoute.js'
+export { default as groupRoute } from './groupRoute.js'
+export { default as uploadRoute } from './uploadRoute.js'
+export { default as massageRoute } from './massageRoute.js'
+export { default as dialogueRoute } from './dialogueRoute.js'
