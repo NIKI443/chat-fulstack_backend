@@ -39,7 +39,7 @@ app.use('/group', groupRoute)
 app.use('/dialogue', dialogueRoute)
 app.use('/massage', massageRoute)
 
-server.listen(4444, err => {
+server.listen(process.env.PORT || 4444, err => {
 	if (err) {
 		return console.log(err)
 	}
