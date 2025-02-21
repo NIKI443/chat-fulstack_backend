@@ -30,7 +30,6 @@ app.use(
 	})
 )
 
-
 app.use('/upload', uploadRoute)
 app.get('/users', checkAuth, handleValidationErrors, UserController.getAllUsers)
 app.use('/auth', authRoute)
