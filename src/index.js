@@ -25,7 +25,7 @@ app.use('/uploads/images/profile', express.static('src/uploads/images/profile'))
 app.use('/uploads/images/massage', express.static('src/uploads/images/massage'))
 app.use(
 	cors({
-		origin: 'http://localhost:5173',
+		origin: process.env.CORS_ORIGIN_SITE || 'http://localhost:5173',
 		credentials: true,
 	})
 )
