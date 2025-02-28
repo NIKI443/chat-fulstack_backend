@@ -30,8 +30,6 @@ app.use(
 	})
 )
 
-console.log(process.env.CORS_ORIGIN_SITE || 'http://localhost:5173')
-console.log(process.env.CORS_ORIGIN_SITE)
 
 app.use('/upload', uploadRoute)
 app.get('/users', checkAuth, handleValidationErrors, UserController.getAllUsers)
